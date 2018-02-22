@@ -1,0 +1,166 @@
+/*
+    Mahmoud Hassan Elshaieb
+*/
+
+/* Global Rules */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    
+}
+
+/* Global Rules */
+
+header {
+    background: url(../images/3.jpeg) fixed;
+    background-size: cover;
+    border-bottom: 10px solid #FFD54F;
+    position: relative
+}
+
+header .make {
+    font-size: 8em;
+    font-weight: 900;
+    font-family: 'Lato';
+    text-align: center;
+    opacity: 0;
+    padding-top: 280px;
+    color: #FFF;
+    position: relative;
+    text-shadow: 2px 4px 10px #000
+}
+
+header .make:before {
+    content: '';
+    position: absolute;
+    bottom: 129px;
+    left: 219px;
+    width: 200px;
+    height: 4px;
+    background-color: #FFF
+}
+
+header .make:after {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    right: 211px;
+    width: 200px;
+    height: 4px;
+    background-color: #FFF
+}
+
+.main .work-area {
+    text-align: center;
+    padding: 200px 0;
+    overflow: hidden
+}
+
+.main .work-area .task {
+    width: 68%;
+    margin-right: 2%;
+    float: left;
+    margin-bottom: 50px
+}
+
+.main .work-area .task-btn {
+    width: 30%;
+    float: left
+}
+
+input[type=text] {
+    width: 20%;
+    border: none;
+    color: #1A237E;
+    border-bottom: 5px solid #FFD54F;
+    padding: 10px;
+    text-align: center;
+    font: 700 3em 'Lato';
+    transition: width .8s ease-in-out
+}
+
+input[type=text]:focus {
+    width: 100%;
+    box-shadow: 5px 20px 50px 1px #E6EE9C
+}
+
+input[type=text]:focus::placeholder {
+    opacity: .3;
+    transition: opacity .8s ease-in-out
+}
+
+::placeholder {color: #1A237E;opacity: .8}
+
+.main .work-area .task-btn button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 5px solid #FFD54F;
+    font: 900 3em 'Lato';
+    background-color: #1A237E;
+    color: #FFD54F;
+    transition: all .3s ease-in-out;
+    cursor: pointer
+}
+
+.main .work-area .task-btn button:hover {
+    background-color: #FFD54F;
+    color: #1A237E;
+    border-radius: 50px 0
+}
+
+.main section {
+    height: 
+}
+
+.main section > div {
+    display: none;
+    background-color: #FF5252;
+    color: #FFD54F;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font: 900 3em 'Lato';
+    cursor: pointer;
+    transition: background .5s linear;
+    position: relative
+}
+
+.main section > div:hover {
+    background-color: #B71C1C
+}
+
+.clearfix {clear: both}
+
+
+nav {
+    background: url(../images/h1.png) center no-repeat;
+    padding: 200px;
+    font: 900 1.5em 'Lato';
+    color: #1A237E;
+    text-shadow: 2px 4px 10px #FFD54F
+}
+
+.main .toast {
+    background-color: rgba(0, 0, 0, .8);
+    color: #FFD54F;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Lato';
+    position: absolute;
+    top: 780px;
+    left: 520px;
+    display: none;
+}
